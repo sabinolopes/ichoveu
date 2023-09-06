@@ -1,7 +1,7 @@
 const token = 'ff6de00c291d49ae959124621230609';
 
 export async function searchCities(term) {
-  const apiUrl = `http://api.weatherapi.com/v1/search.json?lang=pt&key=${token}&q=${term}`;
+  const apiUrl = `https://api.weatherapi.com/v1/search.json?lang=pt&key=${token}&q=${term}`;
 
   const response = await fetch(apiUrl);
   const data = await response.json();
@@ -12,7 +12,7 @@ export async function searchCities(term) {
 }
 
 export async function getWeatherByCity(cityURL) {
-  const apiUrl = `http://api.weatherapi.com/v1/current.json?lang=pt&key=${token}&q=${cityURL}`;
+  const apiUrl = `https://api.weatherapi.com/v1/current.json?lang=pt&key=${token}&q=${cityURL}`;
 
   const response = await fetch(apiUrl);
   const data = await response.json();

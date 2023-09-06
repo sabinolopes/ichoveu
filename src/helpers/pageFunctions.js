@@ -101,7 +101,7 @@ const createButton = (url) => {
 
 export function createCityElement(cityInfo) {
   const { name, country, temp, condition, icon, url } = cityInfo;
-  const apiUrl = `http://api.weatherapi.com/v1/forecast.json?lang=pt&key=${token}&q=${url}&days=7`;
+  const apiUrl = `https://api.weatherapi.com/v1/forecast.json?lang=pt&key=${token}&q=${url}&days=7`;
 
   const cityElement = createElement('li', 'city');
 
